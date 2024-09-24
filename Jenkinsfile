@@ -1,9 +1,9 @@
-pipline{
+pipline {
     agent any 
-    environment{
+    environment {
         APP_NAME = "test app name"
     }
-    stages{
+    stages {
         stage('Build Image'){
             steps{
                 sh "echo ${env.APP_NAME}"
